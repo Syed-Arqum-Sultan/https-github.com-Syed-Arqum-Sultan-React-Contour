@@ -1,9 +1,14 @@
 import * as React from 'react';
 import {useEffect, useState} from 'react';
 import './style.css';
+import {StatePractice} from './StatePractice';
+
 
 export default function Counter() {
   const [show, setShow] = useState(false);
+  
+
+
 
 
 //   const handleToggle = () => {
@@ -19,8 +24,11 @@ export default function Counter() {
     //   }}>{show ? 'hide' : 'show'} counter</button>
     // {show ? <DisplayCounter /> : null}
     // </div>
+<div>
+    <StatePractice/>
 
       <div>
+        
         {show? 
          <button onClick={(e)=> {
          e.preventDefault;
@@ -34,7 +42,7 @@ export default function Counter() {
         
       </div>
 
-
+      </div>
   )
   
 }
@@ -65,3 +73,6 @@ function DisplayCounter() {
       </div>
   )
 }
+
+///// useState Practice!
+
